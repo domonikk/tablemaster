@@ -1,26 +1,75 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.bg-header{
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url('../assets/images/court.jpg');
+}  
+
+
+.bg-img1{
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url('../assets/images/ping1.png');
+}  
+
+.bg-vid{
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url('../assets/images/illustration1.mp4');
+}  
+
+.bg-poster{
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url('../assets/images/tm-poster.png');
+} 
+
+.bg-logos{
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url('../assets/images/tm-logos.png');
+} 
+
+.bg-colors{
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url('../assets/images/tm-colors.png');
+} 
+
+.bg-fonts{
+  @apply bg-contain bg-center bg-no-repeat;
+  background-image: url('../assets/images/tm-fonts.png');
+}  
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'markova';
+  src: url('/fonts/markova.ttf') format('truetype'); /* ✅ corrected format */
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-headline: 'markova', sans-serif; 
+   --color-red: #660503;
+  
+} 
+
+@layer components{
+  .about-content {
+    @apply min-h-screen bg-black text-gray-400 flex flex-col items-center justify-center space-y-12 px-4;
+  } 
+
+   .msg-text-scroll {
+      @apply rotate-[3deg] 2xl:translate-y-5 -translate-y-5 absolute z-10 border-[.5vw] border-[#7f3b2d];
+    }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
