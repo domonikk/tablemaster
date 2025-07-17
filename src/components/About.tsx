@@ -37,10 +37,10 @@ const About = () => {
 
   return (
     <section className="about-content"> 
-        <div className="px-16 mx-auto flex-center relative">  
+        <div className="px-5 lg:px-16 md:px-16 mx-auto flex-center relative">  
           <div className="w-full h-full sticky top-0"> 
             <div className="about-wrapper">  
-               <h1 className="first-message text-2xl md:text-3xl lg:text-4xl font-bold text-center"> 
+               <h1 className="first-message text-xl md:text-3xl lg:text-4xl font-bold text-center"> 
                  Creating a mini brand guideline for a ping pong brand was a unique challenge, especially since it was my first time approaching branding in this way.
                   I wanted to move beyond the expected and reimagine the brand through a more refined, almost iconic lens similar to Wimbledon. Inspired by that, 
                   I curated a collection of imagery, fonts, logo concepts, and a tailored color palette that together give the brand a sense of personality, energy, and timelessness. 
