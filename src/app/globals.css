@@ -64,7 +64,7 @@
 
 @layer components{
   .about-content {
-    @apply min-h-screen bg-black text-gray-400 flex flex-col items-center justify-center space-y-12 px-4;
+    @apply min-h-screen  text-gray-400 flex flex-col items-center justify-center space-y-12 px-4;
   } 
 
    .msg-text-scroll {
